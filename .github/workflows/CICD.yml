@@ -13,17 +13,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: job1
+        uses: appleboy/ssh-action@master
   job2:
     name: job2
     runs-on: ubuntu-latest
     needs: job1
     steps:
       - name: job2
+        uses: appleboy/ssh-action@master
   job3:
     name: job3
     runs-on: ubuntu-latest
     needs: [job1, job2]
     steps:
       - name: job3
+        uses: appleboy/ssh-action@master
 #  build:
 #    name:
