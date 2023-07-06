@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-1:982415551653:task-definition/sample-fargate:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-1:982415551653:task-definition/sample-fargate:2",
     "containerDefinitions": [
         {
             "name": "fargate-app",
@@ -26,8 +26,9 @@
         }
     ],
     "family": "sample-fargate",
+    "executionRoleArn": "arn:aws:iam::982415551653:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -48,7 +49,7 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2023-07-06T09:05:53.626Z",
+    "registeredAt": "2023-07-06T12:18:47.661Z",
     "registeredBy": "arn:aws:iam::982415551653:root",
     "tags": []
 }
