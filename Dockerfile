@@ -1,5 +1,5 @@
 # Avoid using multi-stages build here to leverage on docker-caching to reduce build time on AWS Codebuild
-FROM maven:3-openjdk-20 as build
+FROM maven:3-openjdk-17 as build
 
 WORKDIR /build
 
