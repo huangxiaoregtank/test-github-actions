@@ -1,0 +1,20 @@
+
+name: CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull-request:
+    branches: [ main ]
+
+jobs:
+  job1:
+    name: job1
+  job2:
+    name: job2
+    needs: job1
+  job3:
+    name: job3
+    needs: [job1, job2]
+#  build:
+#    name:
