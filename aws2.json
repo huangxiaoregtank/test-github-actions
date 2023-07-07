@@ -19,12 +19,6 @@
       "entryPoint": [
         "sh",
         "-c"
-      ],
-      "resourceRequirements": [
-        {
-          "value": "",
-          "type": "GPU"
-        }
       ]
     }
   ],
