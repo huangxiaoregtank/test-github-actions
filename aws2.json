@@ -20,7 +20,7 @@
       "entryPoint": [],
       "command": [],
       "environment": [],
-      "privileged": true,
+      "privileged": false,
       "dnsServers": [],
       "dnsSearchDomains": [],
       "extraHosts": [],
