@@ -3,12 +3,12 @@
     "containerDefinitions": [
         {
             "name": "fargate-app",
-            "image": "public.ecr.aws/docker/library/httpd:latest",
+            "image": "public.ecr.aws/docker/library/test_cicd:latest",
             "cpu": 0,
             "portMappings": [
                 {
-                    "containerPort": 80,
-                    "hostPort": 80,
+                    "containerPort": 8080,
+                    "hostPort": 8080,
                     "protocol": "tcp"
                 }
             ],
