@@ -2,7 +2,7 @@
   "family": "sample-fargate",
   "taskRoleArn": "arn:aws:iam::982415551653:role/ecs_role",
   "executionRoleArn": "arn:aws:iam::982415551653:role/ecs_role",
-  "networkMode": "bridge",
+  "networkMode": "awsvpc",
   "containerDefinitions": [
     {
       "name": "fargate-app",
@@ -25,7 +25,7 @@
   "placementConstraints": [
   ],
   "requiresCompatibilities": [
-    "EC2"
+    "FARGATE"
   ],
   "cpu": "512",
   "memory": "1024",
