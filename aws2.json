@@ -7,7 +7,7 @@
     {
       "name": "fargate-app",
       "image": "982415551653.dkr.ecr.ap-southeast-1.amazonaws.com/test_cicd:latest",
-      "cpu": 1024,
+      "cpu": 512,
       "memory": 1024,
       "portMappings": [
         {
@@ -47,7 +47,7 @@
   "requiresCompatibilities": [
     "FARGATE"
   ],
-  "cpu": "1024",
+  "cpu": "512",
   "memory": "1024",
   "tags": [
   ]
