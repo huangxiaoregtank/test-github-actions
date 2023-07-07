@@ -2,12 +2,12 @@
   "family": "sample-fargate",
   "taskRoleArn": "arn:aws:iam::982415551653:role/ecs_role",
   "executionRoleArn": "arn:aws:iam::982415551653:role/ecs_role",
-  "networkMode": "bridge",
+  "networkMode": "awsvpc",
   "containerDefinitions": [
     {
       "name": "fargate-app",
       "image": "982415551653.dkr.ecr.ap-southeast-1.amazonaws.com/test_cicd:latest",
-      "cpu": 0,
+      "cpu": 1024,
       "memory": 1024,
       "portMappings": [
         {
@@ -40,8 +40,12 @@
   ],
   "placementConstraints": [
   ],
-  "requiresCompatibilities": [
+  "compatibilities": [
+    "FARGATE",
     "EC2"
+  ],
+  "requiresCompatibilities": [
+    "FARGATE"
   ],
   "cpu": "1024",
   "memory": "1024",
