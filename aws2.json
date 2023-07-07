@@ -1,0 +1,54 @@
+{
+  "family": "sample-fargate",
+  "taskRoleArn": "arn:aws:iam::982415551653:role/ecs_role",
+  "executionRoleArn": "arn:aws:iam::982415551653:role/ecs_role",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "fargate-app",
+      "image": "982415551653.dkr.ecr.ap-southeast-1.amazonaws.com/test_cicd:latest",
+      "cpu": 512,
+      "memory": 1024,
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 8080,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "entryPoint": [],
+      "command": [],
+      "environment": [],
+      "privileged": false,
+      "dnsServers": [],
+      "dnsSearchDomains": [],
+      "extraHosts": [],
+      "dockerSecurityOptions": [],
+      "dockerLabels": {},
+      "ulimits": [],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/test_cicd",
+          "awslogs-region": "ap-southeast-1",
+          "awslogs-stream-prefix": "ecs"
+        },
+        "secretOptions": []
+      }
+    }
+  ],
+  "placementConstraints": [
+  ],
+  "compatibilities": [
+    "FARGATE",
+    "EC2"
+  ],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "512",
+  "memory": "1024",
+  "tags": [
+  ]
+}
